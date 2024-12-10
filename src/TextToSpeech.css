@@ -2,25 +2,41 @@ body {
     background-image: url('https://images.pexels.com/photos/20323501/pexels-photo-20323501/free-photo-of-orange-ball-device.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
-    height: 100vh; 
-    width: 100vw; 
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
   }
   
-.text-to-speech-container {
+  .text-to-speech-container {
     max-width: 1200px;
-   position: relative;
-   top: 100px;
+    position: relative;
+    top: 100px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
+    background: #ac8c8c;
     border: 1px solid #ddd;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-to-speech-container h1 {
+    font-size: 5rem;
+    color: #e5990b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotateY(-10deg);
   }
   
   h1 {
     text-align: center;
     color: #333;
+    font-size: 2rem;
   }
   
   .text-input {
@@ -64,6 +80,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   }
   
   .voice-select,
@@ -81,5 +98,140 @@ body {
   .highlighted-text .highlight {
     background: yellow;
     font-weight: bold;
+  }
+  
+  @media (max-width: 1200px) {
+    body {
+      padding: 10px;
+    }
+  
+    .text-to-speech-container {
+      padding: 15px;
+    }
+  
+    .text-to-speech-container h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    body {
+      padding: 5px;
+    }
+  
+    .text-to-speech-container {
+      top: 50px;
+    }
+  
+    .text-to-speech-container h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 0;
+    }
+  
+    .text-to-speech-container {
+      padding: 10px;
+    }
+  
+    .text-to-speech-container h1 {
+      font-size: 3rem;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .control-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      padding: 0px;
+    }
+  
+    .text-to-speech-container {
+      padding: 5px;
+      top: 10px;
+      left: 0;
+    }
+  
+    .text-to-speech-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .control-button {
+      width: 100%;
+    }
+  
+    .text-input {
+      font-size: 14px;
+      padding: 5px;
+    }
+  
+    .settings {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .voice-select,
+    .rate-slider {
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .highlighted-text {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .text-to-speech-container {
+      padding: 10px;
+      top: 10px;
+    }
+  
+    .text-to-speech-container h1 {
+      font-size: 2rem;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .control-button {
+      width: 100%;
+    }
+  
+    .settings {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .voice-select,
+    .rate-slider {
+      font-size: 12px;
+      width: 100%;
+    }
+  
+    .text-input {
+      font-size: 14px;
+    }
+  
+    .highlighted-text {
+      font-size: 14px;
+    }
   }
   

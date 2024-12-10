@@ -96,7 +96,7 @@ const TextToSpeech = () => {
 
   return (
     <div className="text-to-speech-container">
-      <h1>Text-to-Speech with Highlighting</h1>
+      <h1>Voicify</h1>
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
