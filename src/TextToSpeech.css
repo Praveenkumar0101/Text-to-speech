@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://images.pexels.com/photos/20323501/pexels-photo-20323501/free-photo-of-orange-ball-device.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    width: 100vw; 
+  }
+  
+.text-to-speech-container {
+    max-width: 1200px;
+   position: relative;
+   top: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .text-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .control-button:hover {
+    background: #0056b3;
+  }
+  
+  .control-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .voice-select,
+  .rate-slider {
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .highlighted-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .highlighted-text .highlight {
+    background: yellow;
+    font-weight: bold;
+  }
+  
