@@ -24,6 +24,7 @@ const TextToSpeech = () => {
 
       window.speechSynthesis.onvoiceschanged = loadVoices;
       loadVoices();
+
     } else {
       alert('Your browser does not support text-to-speech!');
     }
@@ -40,7 +41,7 @@ const TextToSpeech = () => {
 
     const words = text.split(/\s+/); 
 
-    
+ 
     utterance.onboundary = (event) => {
       const charIndex = event.charIndex;
       let cumulativeLength = 0;
